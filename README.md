@@ -1,6 +1,6 @@
 <div align="center">
  
-<a href="//nova-assistant.com" rel="nofollow"><img src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.jpg" alt="NOVA" width="500"></a>
+<img src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.jpg" width="500">
 
 Theses three icons are designed [here](https://dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](https://dribbble.com/Dalton)", I simply coded them in html/css.
 <br></div>
