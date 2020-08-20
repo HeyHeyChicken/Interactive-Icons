@@ -1,0 +1,624 @@
+$icon_size: 114;
+$transition_time: 0.2s;
+
+html{
+  > body{
+    background-color: #0E062E;
+    margin: 0px;
+
+    .Icon{
+      height: #{$icon_size}px;
+      width: #{$icon_size}px;
+      background-color: #18123C;
+      @include border-radius(50%);
+      position: relative;
+
+      > div{
+        position: absolute;
+      }
+
+      > .Graph{
+        z-index: 1;
+        top: calc(#{$icon_size}px * 44 / 114);
+        left: calc(#{$icon_size}px * 9 / 114);
+        height: calc(#{$icon_size}px * 60 / 114);
+        width: calc(#{$icon_size}px * 78 / 114);
+        @include border-radius(calc(#{$icon_size}px * 8 / 114));
+        background-color: #5E3CEF;
+        overflow: hidden;
+
+        > .cirles, > .triangles{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+        }
+
+        > .cirles{
+          z-index: 2;
+          > div{
+            position: absolute;
+            height: calc(#{$icon_size}px * 6 / 114);
+            width: calc(#{$icon_size}px * 6 / 114);
+            background-color: #C1B5FD;
+            @include border-radius(50%);
+            @include transition(bottom, $transition_time, linear);
+
+            &:nth-child(1){
+              bottom: calc(#{$icon_size}px * 20 / 114);
+              left: calc(#{$icon_size}px * 16 / 114);
+            }
+
+            &:nth-child(2){
+              bottom: calc(#{$icon_size}px * 15 / 114);
+              left: calc(#{$icon_size}px * 36 / 114);
+            }
+
+            &:nth-child(3){
+              bottom: calc(#{$icon_size}px * 23 / 114);
+              left: calc(#{$icon_size}px * 56 / 114);
+            }
+          }
+        }
+
+        > .triangles{
+          z-index: 1;
+          $color: #7860F7;
+
+          &:after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: calc(#{$icon_size}px * 17 / 114);
+            width: 100%;
+            background-color: $color;
+          }
+
+          > div{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            bottom: calc(#{$icon_size}px * 17 / 114);
+            border-color: transparent transparent $color transparent;
+            @include transition(border-width, $transition_time, linear);
+
+            &:nth-child(1){
+              left: 0px;
+              border-width: 0 calc(#{$icon_size}px * 19 / 114) calc(#{$icon_size}px * 7 / 114) calc(#{$icon_size}px * 19 / 114);
+            }
+
+            &:nth-child(2){
+              right: 0px;
+              border-width: 0 calc(#{$icon_size}px * 19 / 114) calc(#{$icon_size}px * 9 / 114) calc(#{$icon_size}px * 19 / 114);
+            }
+          }
+        }
+      }
+
+      > .Dashboard{
+        z-index: 2;
+        top: calc(#{$icon_size}px * 8 / 114);
+        left: calc(#{$icon_size}px * 37 / 114);
+        height: calc(#{$icon_size}px * 68 / 114);
+        width: calc(#{$icon_size}px * 68 / 114);
+        background-color: #DFE1F5;
+        @include border-radius(50%);
+        border: calc(#{$icon_size}px * 6 / 114) solid #FFF;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &:after{
+          content: "";
+          position: absolute;
+          top: calc(#{$icon_size}px * 34 / 114);
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          background-color: #FFF;
+          @include border-radius(50%);
+        }
+
+        > span{
+          display: block;
+          height: calc(#{$icon_size}px * 4 / 114);
+          width: calc(#{$icon_size}px * 4 / 114);
+          @include border-radius(50%);
+          background-color: #BBBDF1;
+          position: absolute;
+
+          &:nth-child(1){
+            top: calc(#{$icon_size}px * 6 / 114);
+            left: calc(#{$icon_size}px * 26 / 114);
+          }
+
+          &:nth-child(2){
+            top: calc(#{$icon_size}px * 12 / 114);
+            left: calc(#{$icon_size}px * 12 / 114);
+          }
+
+          &:nth-child(3){
+            top: calc(#{$icon_size}px * 12 / 114);
+            left: calc(#{$icon_size}px * 40 / 114);
+          }
+
+          &:nth-child(4){
+            top: calc(#{$icon_size}px * 24 / 114);
+            left: calc(#{$icon_size}px * 6 / 114);
+          }
+
+          &:nth-child(5){
+            top: calc(#{$icon_size}px * 24 / 114);
+            left: calc(#{$icon_size}px * 46 / 114);
+          }
+        }
+
+        > div{
+          width: calc(#{$icon_size}px * 6 / 114);
+          height: calc(#{$icon_size}px * 22 / 114);
+          background-color: #201854;
+          position: absolute;
+          bottom: calc(#{$icon_size}px * 12 / 114);
+          left: calc(#{$icon_size}px * 25 / 114);
+          z-index: 1;
+          @include border-radius(#{$icon_size}px);
+          transform-origin: calc(#{$icon_size}px * 3 / 114) calc(#{$icon_size}px * 22 / 114);
+          @include transition(transform, $transition_time, linear);
+
+          &:after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            background-color: #201854;
+            @include border-radius(50%);
+            @include transform(translate(-50%, -50%));
+            width: calc(#{$icon_size}px * 12 / 114);
+            height: calc(#{$icon_size}px * 12 / 114);
+          }
+        }
+      }
+
+      > .Zoom{
+        z-index: 2;
+        top: calc(#{$icon_size}px * 9 / 114);
+        left: calc(#{$icon_size}px * 47 / 114);
+        height: calc(#{$icon_size}px * 53 / 114);
+        width: calc(#{$icon_size}px * 53 / 114);
+        background-color: rgba(255, 255, 255, 0.3);
+        @include border-radius(50%);
+        border: calc(#{$icon_size}px * 5 / 114) solid #FFF;
+        box-sizing: border-box;
+        transform: rotate(-45deg);
+        @include transition(transform, $transition_time, linear);
+
+        &:after, &:before{
+          content: "";
+          background-color: #FFF;
+          position: absolute;
+          @include transform(translatex(-50%));
+          left: 50%;
+        }
+
+        &:after{
+          width: calc(#{$icon_size}px * 3 / 114);
+          height: calc(#{$icon_size}px * 7 / 114);
+          top: calc((#{$icon_size}px * 53 / 114) - (#{$icon_size}px * 6 / 114));
+        }
+
+        &:before{
+          width: calc(#{$icon_size}px * 6 / 114);
+          height: calc(#{$icon_size}px * 9 / 114);
+          top: calc((#{$icon_size}px * 53 / 114) - (#{$icon_size}px * 0 / 114));
+          @include border-radius(calc(#{$icon_size}px * 2 / 114));
+        }
+      }
+
+      > .Database{
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+
+        $big_disk_height: 11;
+        $big_disk_color: #5E3CEF;
+
+        > .disks{
+          > div, > span{
+            position: absolute;
+            left: calc(#{$icon_size}px * 43 / 114);
+            height: calc(#{$icon_size}px * (#{$big_disk_height} * 2) / 114);
+            @include transform(translatex(-50%));
+            @include border-radius(50%);
+            @include transition(bottom, $transition_time, linear);
+
+            &:after, &:before{
+              position: absolute;
+              left: 0px;
+            }
+
+            &:before{
+              width: 100%;
+              height: 50%;
+              background-color: $big_disk_color;
+              bottom: 50%;
+            }
+          }
+
+          > div{
+            width: calc(#{$icon_size}px * 68 / 114);
+            background-color: $big_disk_color;
+
+            &:after, &:before{
+              content: "";
+            }
+
+            &:before{
+              background-color: $big_disk_color;
+            }
+
+            &:after{
+              bottom: 50%;
+              width: 100%;
+              height: 100%;
+              @include border-radius(50%);
+              background-color: #7054F1;
+            }
+
+            &:nth-child(1){
+              bottom: calc(#{$icon_size}px * 9 / 114);
+              z-index: 1;
+            }
+
+            &:nth-child(3){
+              bottom: calc(#{$icon_size}px * 28 / 114);
+              z-index: 3;
+            }
+
+            &:nth-child(5){
+              bottom: calc(#{$icon_size}px * 47 / 114);
+              z-index: 5;
+            }
+          }
+
+          $color: #5434DD;
+
+          > span{
+            width: calc(#{$icon_size}px * 58 / 114);
+            background-color: $color;
+
+            &:before{
+              content: "";
+              background-color: $color;
+            }
+
+            &:nth-child(2){
+              bottom: calc(#{$icon_size}px * 25 / 114);
+              z-index: 2;
+            }
+
+            &:nth-child(4){
+              bottom: calc(#{$icon_size}px * 44 / 114);
+              z-index: 4;
+            }
+          }
+        }
+      }
+
+      > .Code{
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        height: calc(#{$icon_size}px * 74 / 114);
+        width: calc(#{$icon_size}px * 96 / 114);
+
+        > .front, > .back{
+          position: absolute;
+
+          > .body{
+            height: calc(#{$icon_size}px * 74 / 114);
+            width: calc(#{$icon_size}px * 96 / 114);
+            position: absolute;
+            @include border-radius(calc(#{$icon_size}px * 7 / 114));
+
+            > .title, > .icon_row, > .mask{
+              position: absolute;
+            }
+
+            > .title{
+              top: 0px;
+              left: 0px;
+              height: calc(#{$icon_size}px * 14 / 114);
+              width: 100%;
+              @include border-radius(calc(#{$icon_size}px * 7 / 114) calc(#{$icon_size}px * 7 / 114) 0 0);
+            }
+
+            > .icon_row{
+              height: calc(#{$icon_size}px * 6 / 114);
+              width: calc(100% - (#{$icon_size}px * 12 / 114) * 2);
+              left: 50%;
+              @include border-radius(#{$icon_size}px);
+              @include transform(translatex(-50%));
+
+              &:nth-child(2){
+                bottom: calc(#{$icon_size}px * 10 / 114);
+
+                > .icon_col{
+                  &:nth-child(1){
+                    width: calc(#{$icon_size}px * 40 / 114);
+                  }
+
+                  &:nth-child(2){
+                    width: calc(#{$icon_size}px * 16 / 114);
+                  }
+                }
+              }
+
+              &:nth-child(3){
+                bottom: calc(#{$icon_size}px * 22 / 114);
+
+                > .icon_col{
+                  &:nth-child(1){
+                    width: calc(#{$icon_size}px * 28 / 114);
+                  }
+
+                  &:nth-child(2){
+                    width: calc(#{$icon_size}px * 32 / 114);
+                  }
+                }
+              }
+
+              &:nth-child(4){
+                bottom: calc(#{$icon_size}px * 34 / 114);
+
+                > .icon_col{
+                  &:nth-child(1){
+                    width: calc(#{$icon_size}px * 16 / 114);
+                  }
+
+                  &:nth-child(2){
+                    width: calc(#{$icon_size}px * 28 / 114);
+                  }
+
+                  &:nth-child(3){
+                    width: calc(#{$icon_size}px * 12 / 114);
+                  }
+                }
+              }
+
+              &:nth-child(5){
+                bottom: calc(#{$icon_size}px * 46 / 114);
+
+                > .icon_col{
+                  &:nth-child(1){
+                    width: calc(#{$icon_size}px * 32 / 114);
+                  }
+
+                  &:nth-child(2){
+                    width: calc(#{$icon_size}px * 12 / 114);
+                  }
+
+                  &:nth-child(3){
+                    width: calc(#{$icon_size}px * 8 / 114);
+                  }
+                }
+              }
+
+              > .icon_col{
+                float: left;
+                height: 100%;
+                @include border-radius(#{$icon_size}px);
+
+                &:not(:first-child){
+                  margin-left: calc(#{$icon_size}px * 6 / 114);
+                }
+              }
+            }
+          }
+        }
+
+        > .back{
+          top: 50%;
+          z-index: 2;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          @include transform(translatey(-50%));
+
+          > .body{
+            right: 0px;
+            top: 50%;
+            background-color: #5E3CEF;
+            @include transform(translatey(-50%));
+
+            > .title{
+              background-color: #5636E1;
+
+              > div{
+                position: absolute;
+                top: 50%;
+                @include border-radius(50%);
+                height: calc(#{$icon_size}px * 4 / 114);
+                width: calc(#{$icon_size}px * 4 / 114);
+                background-color: #AEA1F3;
+                @include transform(translateY(-50%));
+
+                &:nth-child(1){
+                  left: calc(#{$icon_size}px * 8 / 114);
+                }
+
+                &:nth-child(2){
+                  left: calc(#{$icon_size}px * 20 / 114);
+                }
+
+                &:nth-child(3){
+                  left: calc(#{$icon_size}px * 32 / 114);
+                }
+              }
+            }
+
+            > .icon_row{
+              > .icon_col{
+                background-color: #725AEB;
+
+                &.blur{
+                  background-color: #6444F1;
+                }
+              }
+            }
+          }
+        }
+
+        > .front{
+          top: 0%;
+          z-index: 2;
+          right: 7.3%;
+          height: 300%;
+          width: 58%;
+          @include transform(rotate(10deg) translatey(-50%));
+          overflow: hidden;
+          @include transition(all, $transition_time, linear);
+
+          > .body{
+            z-index: 1;
+            right: 10%;
+            bottom: 15.1%;
+            background-color: #FFFFFF;
+            @include transform(rotate(-10deg));
+            @include transition(bottom, $transition_time, linear);
+
+            > .title{
+              background-color: #E1DFED;
+            }
+
+            > .icon_row{
+              > .icon_col{
+                background-color: #D7D3F5;
+
+                &.blur{
+                  background-color: #F5F5FB;
+                }
+              }
+            }
+          }
+        }
+
+        > .bar{
+          position: absolute;
+          z-index: 2;
+          width: calc(#{$icon_size}px * 8 / 114);
+          background-color: #F5F5FB;
+          height: calc(#{$icon_size}px * 0.7);
+          top: 50%;
+          left: 42%;
+          @include transition(left, $transition_time, linear);
+          @include transform(translateY(-50%) rotate(10deg));
+          box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+
+          > div{
+            box-shadow: 0 2px 2px 0 #D1CDE8;
+            @include border-radius(50%);
+            background-color: #FEFEFE;
+            position: absolute;
+            height: calc(#{$icon_size}px * 16 / 114);
+            width: calc(#{$icon_size}px * 16 / 114);
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+
+            &:last-child{
+              top: 100%;
+            }
+
+            &:after{
+              content: "";
+              @include border-radius(50%);
+              position: absolute;
+              height: calc(#{$icon_size}px * 6 / 114);
+              width: calc(#{$icon_size}px * 6 / 114);
+              @include transform(translate(-50%, -50%));
+              left: 50%;
+              top: 50%;
+              background-color: #BBBDF1;
+            }
+          }
+        }
+      }
+
+      &:hover{
+        > .Graph{
+          > .cirles{
+            > div{
+              &:nth-child(1){
+                bottom: calc(#{$icon_size}px * 23 / 114);
+              }
+
+              &:nth-child(3){
+                bottom: calc(#{$icon_size}px * 26 / 114);
+              }
+            }
+          }
+
+          > .triangles{
+            > div{
+              &:nth-child(1){
+                border-bottom-width: calc(#{$icon_size}px * 9 / 114);
+              }
+
+              &:nth-child(2){
+                border-bottom-width: calc(#{$icon_size}px * 12 / 114);
+              }
+            }
+          }
+        }
+
+        > .Dashboard{
+          > div{
+            transform: rotate(30deg);
+          }
+        }
+
+        > .Zoom{
+          transform: rotate(-30deg);
+        }
+
+        > .Database{
+          > .disks{
+            > div{
+              &:nth-child(3){
+                bottom: calc(#{$icon_size}px * 33 / 114);
+              }
+
+              &:nth-child(5){
+                bottom: calc(#{$icon_size}px * 57 / 114);
+              }
+            }
+
+            > span{
+              &:nth-child(4){
+                bottom: calc(#{$icon_size}px * 49 / 114);
+              }
+            }
+          }
+        }
+
+        > .Code{
+          > .front{
+            width: 76%;
+            right: 5.6%;
+
+            > .body{
+              bottom: 15.65%;
+            }
+          }
+
+          > .bar{
+            left: 24%;
+          }
+        }
+      }
+    }
+  }
+}
