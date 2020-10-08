@@ -1,13 +1,14 @@
-<div align="center">
-    <a href="https://github.com/HeyHeyChicken/Interactive-Icons">
-        <img alt="logo" src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.gif" width="500">
-    </a>
-</div>
+<div align="center">  
+    <a href="https://github.com/HeyHeyChicken/Interactive-Icons">  
+        <img alt="logo" src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.gif" width="500">  
+    </a>  
+</div>    
 <br/>
-<div align="center">
-Theses three icons are designed [here](//dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](//dribbble.com/Dalton)", I simply coded them in html/css.
+<div align="center">  
+
+Theses three icons are designed [here](//dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](//dribbble.com/Dalton)", I simply coded them in html/css.  
+
 </div>
-<br/>
 <br/>
 
 ## Installation
