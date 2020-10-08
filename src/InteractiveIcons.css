@@ -1,7 +1,16 @@
+/*!
+ * Interactive Icons 1.1.1
+ * https://github.com/HeyHeyChicken/Interactive-Icons
+ * @license MIT licensed
+ *
+ * Copyright (C) 2019 Duval Antoine (HeyHeyChicken)
+ */
+
 html > body {
     background-color: #0E062E;
     margin: 0px;
 }
+
 html > body .Icon {
     height: 114px;
     width: 114px;
@@ -11,9 +20,11 @@ html > body .Icon {
     border-radius: 50%;
     position: relative;
 }
+
 html > body .Icon > div {
     position: absolute;
 }
+
 html > body .Icon > .Graph {
     z-index: 1;
     top: calc(114px * 44 / 114);
@@ -26,6 +37,7 @@ html > body .Icon > .Graph {
     background-color: #5E3CEF;
     overflow: hidden;
 }
+
 html > body .Icon > .Graph > .cirles, html > body .Icon > .Graph > .triangles {
     position: absolute;
     top: 0px;
@@ -33,9 +45,11 @@ html > body .Icon > .Graph > .cirles, html > body .Icon > .Graph > .triangles {
     height: 100%;
     width: 100%;
 }
+
 html > body .Icon > .Graph > .cirles {
     z-index: 2;
 }
+
 html > body .Icon > .Graph > .cirles > div {
     position: absolute;
     height: calc(114px * 6 / 114);
@@ -49,21 +63,26 @@ html > body .Icon > .Graph > .cirles > div {
     -o-transition: bottom 0.2s linear;
     transition: bottom 0.2s linear;
 }
+
 html > body .Icon > .Graph > .cirles > div:nth-child(1) {
     bottom: calc(114px * 20 / 114);
     left: calc(114px * 16 / 114);
 }
+
 html > body .Icon > .Graph > .cirles > div:nth-child(2) {
     bottom: calc(114px * 15 / 114);
     left: calc(114px * 36 / 114);
 }
+
 html > body .Icon > .Graph > .cirles > div:nth-child(3) {
     bottom: calc(114px * 23 / 114);
     left: calc(114px * 56 / 114);
 }
+
 html > body .Icon > .Graph > .triangles {
     z-index: 1;
 }
+
 html > body .Icon > .Graph > .triangles:after {
     content: "";
     position: absolute;
@@ -73,6 +92,7 @@ html > body .Icon > .Graph > .triangles:after {
     width: 100%;
     background-color: #7860F7;
 }
+
 html > body .Icon > .Graph > .triangles > div {
     position: absolute;
     width: 0;
@@ -85,14 +105,17 @@ html > body .Icon > .Graph > .triangles > div {
     -o-transition: border-width 0.2s linear;
     transition: border-width 0.2s linear;
 }
+
 html > body .Icon > .Graph > .triangles > div:nth-child(1) {
     left: 0px;
     border-width: 0 calc(114px * 19 / 114) calc(114px * 7 / 114) calc(114px * 19 / 114);
 }
+
 html > body .Icon > .Graph > .triangles > div:nth-child(2) {
     right: 0px;
     border-width: 0 calc(114px * 19 / 114) calc(114px * 9 / 114) calc(114px * 19 / 114);
 }
+
 html > body .Icon > .Dashboard {
     z-index: 2;
     top: calc(114px * 8 / 114);
@@ -107,6 +130,7 @@ html > body .Icon > .Dashboard {
     box-sizing: border-box;
     overflow: hidden;
 }
+
 html > body .Icon > .Dashboard:after {
     content: "";
     position: absolute;
@@ -119,6 +143,7 @@ html > body .Icon > .Dashboard:after {
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+
 html > body .Icon > .Dashboard > span {
     display: block;
     height: calc(114px * 4 / 114);
@@ -129,26 +154,32 @@ html > body .Icon > .Dashboard > span {
     background-color: #BBBDF1;
     position: absolute;
 }
+
 html > body .Icon > .Dashboard > span:nth-child(1) {
     top: calc(114px * 6 / 114);
     left: calc(114px * 26 / 114);
 }
+
 html > body .Icon > .Dashboard > span:nth-child(2) {
     top: calc(114px * 12 / 114);
     left: calc(114px * 12 / 114);
 }
+
 html > body .Icon > .Dashboard > span:nth-child(3) {
     top: calc(114px * 12 / 114);
     left: calc(114px * 40 / 114);
 }
+
 html > body .Icon > .Dashboard > span:nth-child(4) {
     top: calc(114px * 24 / 114);
     left: calc(114px * 6 / 114);
 }
+
 html > body .Icon > .Dashboard > span:nth-child(5) {
     top: calc(114px * 24 / 114);
     left: calc(114px * 46 / 114);
 }
+
 html > body .Icon > .Dashboard > div {
     width: calc(114px * 6 / 114);
     height: calc(114px * 22 / 114);
@@ -166,6 +197,7 @@ html > body .Icon > .Dashboard > div {
     -o-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
 }
+
 html > body .Icon > .Dashboard > div:after {
     content: "";
     position: absolute;
@@ -183,6 +215,7 @@ html > body .Icon > .Dashboard > div:after {
     width: calc(114px * 12 / 114);
     height: calc(114px * 12 / 114);
 }
+
 html > body .Icon > .Zoom {
     z-index: 2;
     top: calc(114px * 9 / 114);
@@ -201,6 +234,7 @@ html > body .Icon > .Zoom {
     -o-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
 }
+
 html > body .Icon > .Zoom:after, html > body .Icon > .Zoom:before {
     content: "";
     background-color: #FFF;
@@ -212,11 +246,13 @@ html > body .Icon > .Zoom:after, html > body .Icon > .Zoom:before {
     transform: translatex(-50%);
     left: 50%;
 }
+
 html > body .Icon > .Zoom:after {
     width: calc(114px * 3 / 114);
     height: calc(114px * 7 / 114);
     top: calc((114px * 53 / 114) - (114px * 6 / 114));
 }
+
 html > body .Icon > .Zoom:before {
     width: calc(114px * 6 / 114);
     height: calc(114px * 9 / 114);
@@ -225,6 +261,7 @@ html > body .Icon > .Zoom:before {
     -moz-border-radius: calc(114px * 2 / 114);
     border-radius: calc(114px * 2 / 114);
 }
+
 html > body .Icon > .Database {
     z-index: 1;
     top: 0px;
@@ -232,6 +269,7 @@ html > body .Icon > .Database {
     height: 100%;
     width: 100%;
 }
+
 html > body .Icon > .Database > .disks > div, html > body .Icon > .Database > .disks > span {
     position: absolute;
     left: calc(114px * 43 / 114);
@@ -249,26 +287,32 @@ html > body .Icon > .Database > .disks > div, html > body .Icon > .Database > .d
     -o-transition: bottom 0.2s linear;
     transition: bottom 0.2s linear;
 }
+
 html > body .Icon > .Database > .disks > div:after, html > body .Icon > .Database > .disks > div:before, html > body .Icon > .Database > .disks > span:after, html > body .Icon > .Database > .disks > span:before {
     position: absolute;
     left: 0px;
 }
+
 html > body .Icon > .Database > .disks > div:before, html > body .Icon > .Database > .disks > span:before {
     width: 100%;
     height: 50%;
     background-color: #5E3CEF;
     bottom: 50%;
 }
+
 html > body .Icon > .Database > .disks > div {
     width: calc(114px * 68 / 114);
     background-color: #5E3CEF;
 }
+
 html > body .Icon > .Database > .disks > div:after, html > body .Icon > .Database > .disks > div:before {
     content: "";
 }
+
 html > body .Icon > .Database > .disks > div:before {
     background-color: #5E3CEF;
 }
+
 html > body .Icon > .Database > .disks > div:after {
     bottom: 50%;
     width: 100%;
@@ -278,34 +322,42 @@ html > body .Icon > .Database > .disks > div:after {
     border-radius: 50%;
     background-color: #7054F1;
 }
+
 html > body .Icon > .Database > .disks > div:nth-child(1) {
     bottom: calc(114px * 9 / 114);
     z-index: 1;
 }
+
 html > body .Icon > .Database > .disks > div:nth-child(3) {
     bottom: calc(114px * 28 / 114);
     z-index: 3;
 }
+
 html > body .Icon > .Database > .disks > div:nth-child(5) {
     bottom: calc(114px * 47 / 114);
     z-index: 5;
 }
+
 html > body .Icon > .Database > .disks > span {
     width: calc(114px * 58 / 114);
     background-color: #5434DD;
 }
+
 html > body .Icon > .Database > .disks > span:before {
     content: "";
     background-color: #5434DD;
 }
+
 html > body .Icon > .Database > .disks > span:nth-child(2) {
     bottom: calc(114px * 25 / 114);
     z-index: 2;
 }
+
 html > body .Icon > .Database > .disks > span:nth-child(4) {
     bottom: calc(114px * 44 / 114);
     z-index: 4;
 }
+
 html > body .Icon > .Code {
     top: 50%;
     left: 50%;
@@ -317,9 +369,11 @@ html > body .Icon > .Code {
     height: calc(114px * 74 / 114);
     width: calc(114px * 96 / 114);
 }
+
 html > body .Icon > .Code > .front, html > body .Icon > .Code > .back {
     position: absolute;
 }
+
 html > body .Icon > .Code > .front > .body, html > body .Icon > .Code > .back > .body {
     height: calc(114px * 74 / 114);
     width: calc(114px * 96 / 114);
@@ -328,9 +382,11 @@ html > body .Icon > .Code > .front > .body, html > body .Icon > .Code > .back > 
     -moz-border-radius: calc(114px * 7 / 114);
     border-radius: calc(114px * 7 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .title, html > body .Icon > .Code > .front > .body > .icon_row, html > body .Icon > .Code > .front > .body > .mask, html > body .Icon > .Code > .back > .body > .title, html > body .Icon > .Code > .back > .body > .icon_row, html > body .Icon > .Code > .back > .body > .mask {
     position: absolute;
 }
+
 html > body .Icon > .Code > .front > .body > .title, html > body .Icon > .Code > .back > .body > .title {
     top: 0px;
     left: 0px;
@@ -340,6 +396,7 @@ html > body .Icon > .Code > .front > .body > .title, html > body .Icon > .Code >
     -moz-border-radius: calc(114px * 7 / 114) calc(114px * 7 / 114) 0 0;
     border-radius: calc(114px * 7 / 114) calc(114px * 7 / 114) 0 0;
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row, html > body .Icon > .Code > .back > .body > .icon_row {
     height: calc(114px * 6 / 114);
     width: calc(100% - (114px * 12 / 114) * 2);
@@ -353,48 +410,63 @@ html > body .Icon > .Code > .front > .body > .icon_row, html > body .Icon > .Cod
     -o-transform: translatex(-50%);
     transform: translatex(-50%);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(2), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(2) {
     bottom: calc(114px * 10 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(2) > .icon_col:nth-child(1), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(2) > .icon_col:nth-child(1) {
     width: calc(114px * 40 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(2) > .icon_col:nth-child(2), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(2) > .icon_col:nth-child(2) {
     width: calc(114px * 16 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(3), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(3) {
     bottom: calc(114px * 22 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(3) > .icon_col:nth-child(1), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(3) > .icon_col:nth-child(1) {
     width: calc(114px * 28 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(3) > .icon_col:nth-child(2), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(3) > .icon_col:nth-child(2) {
     width: calc(114px * 32 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(4), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(4) {
     bottom: calc(114px * 34 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(4) > .icon_col:nth-child(1), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(4) > .icon_col:nth-child(1) {
     width: calc(114px * 16 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(4) > .icon_col:nth-child(2), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(4) > .icon_col:nth-child(2) {
     width: calc(114px * 28 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(4) > .icon_col:nth-child(3), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(4) > .icon_col:nth-child(3) {
     width: calc(114px * 12 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(5), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(5) {
     bottom: calc(114px * 46 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(5) > .icon_col:nth-child(1), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(5) > .icon_col:nth-child(1) {
     width: calc(114px * 32 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(5) > .icon_col:nth-child(2), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(5) > .icon_col:nth-child(2) {
     width: calc(114px * 12 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row:nth-child(5) > .icon_col:nth-child(3), html > body .Icon > .Code > .back > .body > .icon_row:nth-child(5) > .icon_col:nth-child(3) {
     width: calc(114px * 8 / 114);
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row > .icon_col, html > body .Icon > .Code > .back > .body > .icon_row > .icon_col {
     float: left;
     height: 100%;
@@ -402,9 +474,11 @@ html > body .Icon > .Code > .front > .body > .icon_row > .icon_col, html > body 
     -moz-border-radius: 114px;
     border-radius: 114px;
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row > .icon_col:not(:first-child), html > body .Icon > .Code > .back > .body > .icon_row > .icon_col:not(:first-child) {
     margin-left: calc(114px * 6 / 114);
 }
+
 html > body .Icon > .Code > .back {
     top: 50%;
     z-index: 2;
@@ -417,6 +491,7 @@ html > body .Icon > .Code > .back {
     -o-transform: translatey(-50%);
     transform: translatey(-50%);
 }
+
 html > body .Icon > .Code > .back > .body {
     right: 0px;
     top: 50%;
@@ -427,9 +502,11 @@ html > body .Icon > .Code > .back > .body {
     -o-transform: translatey(-50%);
     transform: translatey(-50%);
 }
+
 html > body .Icon > .Code > .back > .body > .title {
     background-color: #5636E1;
 }
+
 html > body .Icon > .Code > .back > .body > .title > div {
     position: absolute;
     top: 50%;
@@ -445,21 +522,27 @@ html > body .Icon > .Code > .back > .body > .title > div {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 html > body .Icon > .Code > .back > .body > .title > div:nth-child(1) {
     left: calc(114px * 8 / 114);
 }
+
 html > body .Icon > .Code > .back > .body > .title > div:nth-child(2) {
     left: calc(114px * 20 / 114);
 }
+
 html > body .Icon > .Code > .back > .body > .title > div:nth-child(3) {
     left: calc(114px * 32 / 114);
 }
+
 html > body .Icon > .Code > .back > .body > .icon_row > .icon_col {
     background-color: #725AEB;
 }
+
 html > body .Icon > .Code > .back > .body > .icon_row > .icon_col.blur {
     background-color: #6444F1;
 }
+
 html > body .Icon > .Code > .front {
     top: 0%;
     z-index: 2;
@@ -477,6 +560,7 @@ html > body .Icon > .Code > .front {
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
+
 html > body .Icon > .Code > .front > .body {
     z-index: 1;
     right: 10%;
@@ -492,15 +576,19 @@ html > body .Icon > .Code > .front > .body {
     -o-transition: bottom 0.2s linear;
     transition: bottom 0.2s linear;
 }
+
 html > body .Icon > .Code > .front > .body > .title {
     background-color: #E1DFED;
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row > .icon_col {
     background-color: #D7D3F5;
 }
+
 html > body .Icon > .Code > .front > .body > .icon_row > .icon_col.blur {
     background-color: #F5F5FB;
 }
+
 html > body .Icon > .Code > .bar {
     position: absolute;
     z-index: 2;
@@ -520,6 +608,7 @@ html > body .Icon > .Code > .bar {
     transform: translateY(-50%) rotate(10deg);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
+
 html > body .Icon > .Code > .bar > div {
     box-shadow: 0 2px 2px 0 #D1CDE8;
     -webkit-border-radius: 50%;
@@ -536,9 +625,11 @@ html > body .Icon > .Code > .bar > div {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 html > body .Icon > .Code > .bar > div:last-child {
     top: 100%;
 }
+
 html > body .Icon > .Code > .bar > div:after {
     content: "";
     -webkit-border-radius: 50%;
@@ -556,40 +647,52 @@ html > body .Icon > .Code > .bar > div:after {
     top: 50%;
     background-color: #BBBDF1;
 }
+
 html > body .Icon:hover > .Graph > .cirles > div:nth-child(1) {
     bottom: calc(114px * 23 / 114);
 }
+
 html > body .Icon:hover > .Graph > .cirles > div:nth-child(3) {
     bottom: calc(114px * 26 / 114);
 }
+
 html > body .Icon:hover > .Graph > .triangles > div:nth-child(1) {
     border-bottom-width: calc(114px * 9 / 114);
 }
+
 html > body .Icon:hover > .Graph > .triangles > div:nth-child(2) {
     border-bottom-width: calc(114px * 12 / 114);
 }
+
 html > body .Icon:hover > .Dashboard > div {
     transform: rotate(30deg);
 }
+
 html > body .Icon:hover > .Zoom {
     transform: rotate(-30deg);
 }
+
 html > body .Icon:hover > .Database > .disks > div:nth-child(3) {
     bottom: calc(114px * 33 / 114);
 }
+
 html > body .Icon:hover > .Database > .disks > div:nth-child(5) {
     bottom: calc(114px * 57 / 114);
 }
+
 html > body .Icon:hover > .Database > .disks > span:nth-child(4) {
     bottom: calc(114px * 49 / 114);
 }
+
 html > body .Icon:hover > .Code > .front {
     width: 76%;
     right: 5.6%;
 }
+
 html > body .Icon:hover > .Code > .front > .body {
     bottom: 15.65%;
 }
+
 html > body .Icon:hover > .Code > .bar {
     left: 24%;
 }

@@ -1,5 +1,12 @@
-// To compile this file, you'll need to import the https://github.com/HeyHeyChicken/SCSS-Mixins file.
-// @import "./Mixins/SCSS-Mixins.scss";
+/*!
+ * Interactive Icons 1.1.1
+ * https://github.com/HeyHeyChicken/Interactive-Icons
+ * @license MIT licensed
+ *
+ * Copyright (C) 2019 Duval Antoine (HeyHeyChicken)
+ */
+
+@import "../submodules/SCSS-Mixins/src/SCSS-Mixins";
 
 $icon_size: 114;
 $transition_time: 0.2s;
