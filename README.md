@@ -2,6 +2,7 @@
 <a href="https://github.com/HeyHeyChicken/Interactive-Icons">
 <img src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.gif" width="500">
 </a>
+<br/>
 Theses three icons are designed [here](https://dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](https://dribbble.com/Dalton)", I simply coded them in html/css.
 <br></div>
 <br>
