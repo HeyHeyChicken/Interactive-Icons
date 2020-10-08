@@ -6,7 +6,7 @@
 <br/>
 <div align="center">  
 
-Theses three icons are designed [here](//dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](//dribbble.com/Dalton)", I simply coded them in html/css.  
+Theses three icons are designed [here](//dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](//dribbble.com/Dalton)", I simply coded them in HTML/CSS.  
 
 </div>
 <br/>
