@@ -3,12 +3,12 @@
         <img alt="logo" src="https://github.com/HeyHeyChicken/Interactive-Icons/blob/master/resources/github-logo.gif" width="500">
     </a>
 </div>
-<div align="center">
 <br/>
+<div align="center">
 Theses three icons are designed [here](//dribbble.com/shots/4782458-Interactive-Icons) by "[Dalton](//dribbble.com/Dalton)", I simply coded them in html/css.
-<br>
 </div>
-<br>
+<br/>
+<br/>
 
 ## Installation
 
@@ -30,7 +30,7 @@ This repo will allow you to integrate these three interactive icons on mouse ove
 
 Officially tested on Chromium.
 
-<br>
-<br>
+<br/>
+<br/>
 
 Created by [Antoine Duval (HeyHeyChicken)](//antoine.cuffel.fr) with ❤ and ☕ (chocolate) in [Mesnil-Panneville](//en.wikipedia.org/wiki/Mesnil-Panneville).
